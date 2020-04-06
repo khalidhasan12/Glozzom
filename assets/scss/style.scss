@@ -1,0 +1,205 @@
+$dark-overlay:rgba(0,0,0,0.7);
+$icon-size:50px;
+.navbar{
+    background: #000;
+    .nav-item{
+        padding-left: 1em;
+    }
+    .nav-link{
+        text-transform: uppercase;
+    }
+}
+#slider{
+    .carousel-item{
+        height: 520px;
+    }
+    .carousel-img-1{
+        background: url(../img/image1.jpeg);
+        background-size: cover;
+    }
+    .carousel-img-2{
+        background: url(../img/image2.jpeg);
+        background-size: cover;
+    }
+    .carousel-img-3{
+        background: url(../img/image3.jpeg);
+        background-size: cover;
+    }
+}
+#getstart{
+    position: relative;
+    background: url(../img/bg1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    .dark-overlay{
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+#homevideo{
+    position: relative;
+    background: url(../img/people.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    .dark-overlay{
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .fa{
+            font-size: $icon-size;
+            color: red;
+        }
+    }
+}
+#photo{
+    img{
+        min-height: 250px;
+    }
+}
+#copyright{
+    background: #000;
+}
+#about{
+    background: url(../img/image1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 220px;
+}
+#whatwedo{
+    img{
+        width: 350px;
+        height: 350px;
+    }
+}
+#showpoint{
+    .fa{
+        font-size: $icon-size;
+    }
+}
+#testimonial{
+    .slick-prev::before,
+    .slick-next::before{
+        color: red;
+    }
+}
+#services{
+    background: url(../img/image3.jpeg);
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 200px;
+}
+#blog{
+    background: url(../img/image6.jpeg) ;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+#contact{
+    background: url(../img/image2.jpeg) ;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+
+
+
+
+@media(max-width:767px){
+    .nav-item{
+        padding-left: 0 !important;
+    }
+    #getstart{
+        min-height: 300px;
+    }
+    #photo{
+        img{
+            margin-top: 7px;
+        }
+    }
+    #showpoint{
+        .card{
+            margin-top: 7px;
+        }
+    }
+    #services{
+        h2{
+            font-size: 35px;
+            margin-top: -20px;
+        }
+    }
+    #blog{
+        h2{
+        margin-top: -18px;
+        }
+    }
+    #contact{
+        h2{
+            font-size: 35px;
+            margin-top: -15px;
+        }
+    }
+    #about{
+        h2{
+            font-size: 35px;
+            margin-top: -15px;
+        }
+    }
+}
+
+@media(max-width:480px){
+    .carousel-caption h3{
+        font-size: 38px;
+    }
+    #getstart{
+        min-height: 330px;
+    }
+    #services{
+        h2{
+            font-size: 30px;
+            margin-top: -25px;
+        }
+    }
+    #blog{
+        h2{
+            font-size: 30px;
+            margin-top: -25px;
+        }
+    }
+    #contact{
+        h2{
+            font-size: 30px;
+            margin-top: -25px;
+        }
+    }
+    #about{
+        h2{
+            font-size: 30px;
+            margin-top: -25px;
+        }
+    }
+}
+@media(max-width:375px){
+    #getstart{
+        h3{
+            font-size: 30px;
+            margin-top: -20px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
